@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>BOOKSTORE UNUGHA</header>
+        <form action="/register" method="POST">
+            <div class="field name">
+                <div class="input-area">
+                    <input type="text" name="fullName" placeholder="Full Name">
+                    <i class="icon fas fa-user"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Full name can't be blank</div>
+            </div>
+            <div class="field username">
+                <div class="input-area">
+                    <input type="text" name="username" placeholder="Username">
+                    <i class="icon fas fa-user-circle"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Username can't be blank</div>
+            </div>
+            <div class="field email">
+                <div class="input-area">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Email can't be blank</div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" name="password" placeholder="Password">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Password can't be blank</div>
+            </div>
+            <div class="field confirm-password">
+                <div class="input-area">
+                    <input type="password" name="confirmPassword" placeholder="Confirm Password">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt">Passwords must match</div>
+            </div>
+            <div class="terms">
+                <input type="checkbox" name="termsAndConditions" id="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+        <div class="sign-txt">Already have an account? <a href="../login/index.html">Login now</a></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
